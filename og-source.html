@@ -1,0 +1,31 @@
+<!doctype html>
+<!-- Source for og.png, the link-preview image. Render at 1200x630:
+     "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --hide-scrollbars \
+       --window-size=1200,630 --virtual-time-budget=5000 --screenshot=og.png "file://$PWD/og-source.html" -->
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@500&display=swap">
+<style>
+  html,body{margin:0;width:1200px;height:630px;overflow:hidden}
+  body{background:#0c0f14;color:#f2f5f9;font-family:"Barlow",sans-serif;position:relative}
+  .glow{position:absolute;right:-160px;top:-200px;width:640px;height:640px;border-radius:50%;
+    background:radial-gradient(circle,rgba(255,90,31,.45),rgba(255,90,31,0) 68%)}
+  .wrap{position:absolute;inset:0;padding:72px 84px;display:flex;flex-direction:column}
+  .eyebrow{font:700 30px "Barlow Condensed",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#d4ff3a}
+  h1{margin:14px 0 0;font:700 168px/.86 "Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:-.005em}
+  .sub{margin-top:22px;font-size:34px;color:#97a1ae}
+  .track{position:relative;display:grid;grid-template-columns:repeat(11,1fr);gap:8px;margin-top:auto}
+  .track i{height:20px;border-radius:3px;background:#ff5a1f}
+  .track i.next{background:repeating-linear-gradient(90deg,#d4ff3a 0 9px,transparent 9px 16px)}
+  .track i.todo{background:#262d38}
+  .runner{position:absolute;top:-58px;font-size:46px;transform:translateX(-50%) scaleX(-1)}
+  .ends{display:flex;justify-content:space-between;margin-top:14px;font:600 24px "Barlow Condensed",sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#97a1ae}
+</style>
+<div class="glow"></div>
+<div class="wrap">
+  <div class="eyebrow">11-week comeback</div>
+  <h1>Return<br>to Run</h1>
+  <div class="sub">Week by week, back to running.</div>
+  <div class="track"><i></i><i></i><i></i><i></i><i></i><i></i><i class="next"></i><i class="todo"></i><i class="todo"></i><i class="todo"></i><i class="todo"></i>
+    <span class="runner" style="left:59%">🏃</span></div>
+  <div class="ends"><span>Start</span><span>60-min run</span></div>
+</div>
