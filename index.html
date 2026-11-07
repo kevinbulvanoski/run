@@ -18,12 +18,15 @@
 <meta name="twitter:title" content="Return to Run">
 <meta name="twitter:description" content="Week by week, back to running.">
 <meta name="twitter:image" content="https://kevinbulvanoski.github.io/run/og.png">
-<!-- Everyone who opens the link goes straight to the tracker. -->
-<meta http-equiv="refresh" content="0; url=https://claude.ai/artifact/QiS4oPMSwhWqL6cadwRScc">
 <style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:#0c0f14;color:#f2f5f9;font:16px -apple-system,BlinkMacSystemFont,sans-serif}a{color:#d4ff3a}</style>
 </head>
 <body>
 <p>Opening <a href="https://claude.ai/artifact/QiS4oPMSwhWqL6cadwRScc">Return to Run</a>…</p>
-<script>location.replace('https://claude.ai/artifact/QiS4oPMSwhWqL6cadwRScc');</script>
+<script>
+// People go straight to the tracker. Link-preview fetchers (iMessage, WhatsApp, Slack...) stay here,
+// or they'd follow the redirect and show claude.ai's preview instead of this page's.
+if (!/facebookexternalhit|Facebot|Twitterbot|WhatsApp|Slackbot|TelegramBot|Discordbot|LinkedInBot|SkypeUriPreview|Pinterest|redditbot|Embedly|bot\b|crawler|spider/i.test(navigator.userAgent))
+  location.replace('https://claude.ai/artifact/QiS4oPMSwhWqL6cadwRScc');
+</script>
 </body>
 </html>
